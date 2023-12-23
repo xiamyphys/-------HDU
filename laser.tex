@@ -1,0 +1,53 @@
+\PassOptionsToPackage{quiet}{fontspec}
+\PassOptionsToPackage{quiet}{xeCJK}
+\documentclass[letterpaper]{book}
+\linespread{1.5}
+\AtBeginDocument{
+  \everymath{\displaystyle}
+  \setlength{\abovedisplayskip}{3pt}
+  \setlength{\belowdisplayskip}{3pt}
+}
+\usepackage{geometry,pdfpages,xeCJK,tikz}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setCJKmainfont{SimSong}[BoldFont=Chiron Sung HK,]
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\usepackage{paracol}
+\columnratio{.67}
+\usepackage[hidelinks,colorlinks=true,linkcolor=purple,citecolor=purple,urlcolor=purple]{hyperref}
+\usepackage[level]{datetime}
+\ddmmyyyydate
+\let\Bbbk\relax
+\usepackage[lite]{mtpro2}
+\usepackage{extarrows,siunitx,amsmath,amssymb,amsthm,fixdif,derivative,physics2}
+\usepackage[e]{esvect}
+\usephysicsmodule{ab,ab.legacy,braket,nabla.legacy}
+\def\e{\mathrm{e}}
+\pdfstringdefDisableCommands{%
+  \def\({}%
+  \def\){}%
+  \def\texttt#1{<#1>}%
+}
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}[section]
+\def\theproblem{\arabic{problem}}
+\newenvironment{solution}{\noindent\textbf{Solution.}}{}
+
+\title{\bfseries A Review \& Solution to \textsf{Principles of Laser}}
+
+\author{Mingyu Xia, \href{mailto:xiamyphys@gmail.com}{xiamyphys@gmail.com}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\includepdf{titlepage2.pdf}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\input{cha/cha1.tex}
+\input{cha/cha2.tex}
+\input{cha/cha3.tex}
+\input{cha/cha4.tex}
+\input{cha/cha5.tex}
+
+\end{document}

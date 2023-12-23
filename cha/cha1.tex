@@ -1,0 +1,80 @@
+\chapter{辐射理论概要与激光的产生条件}
+\section{光的波粒二象性}
+\subsection{光波}
+光波是振动的电矢量$\vv{E}$和磁矢量$\vv{B}$的振动和传播. 在均匀介质中，电矢量（又称光矢量）$\vv{E}$的振动方向与磁矢量$\vv{B}$的振动方向互相垂直，且均垂直于传播方向$\vv{k}$. 光对人眼或感光仪器起作用的主要是电矢量$\vv{E}$.
+\begin{enumerate}
+	\item 线偏振光
+\end{enumerate}
+\section{原子的能级和辐射跃迁}
+\section{光的受激辐射}
+\section{光谱线增宽}
+\section{激光形成的条件}
+\newpage
+\section*{Problems}
+\begin{problem}
+	热平衡时，原子上能级$E_2$的数密度为$n_2$，下能级$E_1$的粒子数密度为$n_1$，设$g_1=g_2$.
+\begin{enumerate}
+	\item 当原子跃迁的相应频率$\nu=\qty{3000}{\MHz},\ T=\qty{300}{\K}$时，$n_2/n_1$为多少？
+	\item 若原子跃迁时所发光的波长$\lambda=\qty{1}{\um},\ n_2/n_1=0.1$，则温度$T$为多少？
+\end{enumerate}
+\end{problem}
+\begin{solution}
+\begin{enumerate}
+	\item $\frac{n_2}{n_1}=\frac{g_2}{g_1}\exp\ab(-\frac{h\nu}{kT})\xlongequal{g_2=g_1}\exp\ab(-\frac{h\nu}{kT})=0.9995$.
+	\item $T=\frac{h\nu}{k\ln\frac{n_1}{n_2}}=\frac{hc}{\lambda k\ln\frac{n_1}{n_2}}=\qty{6248.53}{\K}$.
+\end{enumerate}
+\end{solution}
+
+\begin{problem}
+	试计算连续功率均为1W的两光源，分别发射$\lambda=\qty{0.5}{\um},\ \nu=\qty{3000}{\MHz}$的光，每秒从上能级跃迁到下能级的粒子数各为多少？
+\end{problem}
+\begin{solution}
+\begin{itemize}
+	\item $\nu_1=\frac{c}{\lambda}=\qty{5.996e11}{\Hz},\ n_1=\frac{q}{h\nu_1}=\num{2.571e21}$.
+	\item $\nu_2=\qty{3e9}{\Hz};,\ n_1=\frac{q}{h\nu_2}=\num{5.031e23}$.
+\end{itemize}
+\end{solution}
+
+\begin{problem}
+	证明原子自发辐射的平均寿命$\tau=\frac{1}{A_{21}}$，其中$A_{21}$是自发辐射系数.
+\end{problem}
+\begin{proof}
+	由Einstein自发辐射系数的定义
+	\[A_{21}=-\frac{1}{n_2}\odv{n_2}{t}\]
+	分离变量得
+	\[\frac{\d n_2}{n_2}=-A_{21}\d t\]
+	积分得
+	\[\ln n_2=-A_{21}t+C',\ n_2=C\e^{-A_{21}t}\]
+	代入初始条件$t=0,\ n_2=n_{20}$得高能级原子数密度含时表达式
+	\[n_2(t)=n_{20}\e^{-A_{21}t}\]
+	令$n_2(t)=\frac{1}{\e}n_{20}$，得$\e^{-A_{21}t}=\e^{-1}$. 所以自发辐射的平均寿命为
+	\[\tau=\frac{1}{A_{21}}\]
+\end{proof}
+
+\begin{problem}
+	普通光源发射波长$\lambda=\qty{0.6}{\um}$时，如受激辐射与自发辐射光功率体密度之比$\frac{q_B}{q_A}=\frac{1}{2000}$
+\begin{enumerate}
+	\item 求此时单色能量密度$\rho_\nu$.
+	\item 在He-Ne激光器中若$\rho_\nu=\qty{5.0e-4}{\J.\s.m^{-3}}$为$\qty{0.6328}{\mm}$，设$\mu=1$，求$\frac{q_A}{q_B}$为若干？
+\end{enumerate}
+\end{problem}
+\begin{solution}
+\begin{enumerate}
+	\item $\rho_\nu=\frac{8\pi h}{\lambda^3}\frac{q_B}{q_A}=\qty{3.85e-17}{\J.\s.\m^{-3}}$.
+	\item $\frac{q_B}{q_A}=\frac{\lambda^3}{8\pi h}\rho_\nu=\num{7.61e18}$.
+\end{enumerate}
+\end{solution}
+
+\begin{problem}
+	某稳定腔两面反射镜的曲率半径分别$R_1=\qty{-1}{\m}$及$R2=\qty{1.5}{\m}$.
+	\begin{enumerate}
+		\item 这是哪一类型谐振腔？
+		\item 试确定腔长L的可能取值范围，并作出谐振腔的简单示意图.
+		\item 请作稳定图并指出它在图中的可能位置范围.
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+\end{solution}
